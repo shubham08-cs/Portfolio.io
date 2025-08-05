@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0e0e0e;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  size: 1000px;
+}
+.logo span {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #ccc;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #ccc;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Watercolor background effect */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('watercolor.jpg') no-repeat center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.content {
+  max-width: 500px;
+  z-index: 2;
+}
+
+.content h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.content h1 span {
+  color: #fff;
+}
+
+.content p {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+
+.image img {
+  max-width: 900px; /* Increased image size */
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 20px rgba(0,0,0,0.5));
+  transform: scale(1.1); /* Optional: Slight scaling for emphasis */
+  top: -140px;
+  border-bottom: #0e0e0e;
+
+}
+
+/* About Section */
+#about {
+  background: #0e0e0e; /* Matches body background */
+  padding: 100px 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 500px; /* Matches hero content width */
+  z-index: 2;
+}
+
+.about-text h2 {
+  font-size: 50px; /* Matches hero h1 size */
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #bbb; /* Same as hero paragraph */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-text .btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+.about-text .btn:hover {
+  color: #ccc;
+  border-color: #ccc;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 400px;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6));
+  transform: scale(1.05); /* Matches hero image style */
+}
+/* Projects Section */
+#projects {
+  background: #121212;
+  padding: 100px 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.projects-text {
+  text-align: left;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.projects-text h2 {
+  font-size: 50px; /* Matches hero & about section headings */
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.projects-text p {
+  font-size: 16px;
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.projects-text .btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+.projects-text .btn:hover {
+  color: #ccc;
+  border-color: #ccc;
+}
+
+.projects-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  color: #fff;
+  margin: 15px 0;
+}
