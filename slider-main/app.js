@@ -59,3 +59,6 @@ thumbnails.forEach((thumbnail, index) => {
         showSlider();
     })
 })
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('nav ul').classList.toggle('active');
+});
