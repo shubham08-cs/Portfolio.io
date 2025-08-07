@@ -282,3 +282,25 @@ nav ul li a:hover {
     top: 0;
   }
 }
+search {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between search and social icons */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
