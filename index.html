@@ -94,9 +94,18 @@
 <script>
   const menuToggle = document.querySelector('.menu-toggle');
   const navMenu = document.querySelector('nav ul');
+  const navLinks = document.querySelectorAll('nav ul li a');
 
+  // Toggle menu on hamburger click
   menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
   });
 </script>
 
@@ -104,4 +113,5 @@
 </body>
 
 </html>
+
 
