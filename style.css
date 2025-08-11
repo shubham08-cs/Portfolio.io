@@ -139,6 +139,7 @@ nav ul li a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+  
 }
 
 .image img {
@@ -303,4 +304,127 @@ search {
 .social-icons a:hover {
   opacity: 0.8;
   transform: translateY(-2px);
+}
+@media (max-width: 767px) {
+  nav ul {
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - var(--header-height));
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 25px;
+    transition: left 0.3s ease;
+  }
+
+  nav ul.active {
+    left: 0;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* left - center - right */
+  align-items: center;
+}
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  text-align: center;
+}
+
+nav {
+  grid-column: 1 / -1; /* make nav take full width when open */
+}
+
+nav ul {
+  position: fixed;
+  top: var(--header-height);
+  left: -100%;
+  width: 80%;
+  height: calc(100vh - var(--header-height));
+  background: rgba(0,0,0,0.95);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  gap: 25px;
+  transition: left 0.3s ease;
+}
+
+nav ul.active {
+  left: 0;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul {
+  position: fixed;
+  top: var(--header-height);
+  left: -100%;
+  width: 80%;
+  height: calc(100vh - var(--header-height));
+  background: rgba(0,0,0,0.95);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  gap: 25px;
+  transition: left 0.3s ease;
+}
+
+nav ul.active {
+  left: 0;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  padding: 10px 0;
 }
