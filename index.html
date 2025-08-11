@@ -10,23 +10,26 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">Shubhs<span></span></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/slider-main/index.html" target="_blank">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/shubhss._" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/shubham08-cs" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/shubham-ich/" target="_blank"><i class="fab fa-linkedin"></i></a>
-       <a href="https://wa.me/7058036600/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-  </header>
+<header>
+  <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+  <div class="logo">Shubhs<span></span></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="/slider-main/index.html" target="_blank">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="contact.html" target="_blank">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/shubhss._" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/shubham08-cs" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/shubham-ich/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/7058036600/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+</header>
+
+
 
   <section class="hero">
     <div class="content">
@@ -88,6 +91,14 @@
     </div>
   </div>
 </section>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 
 
 </body>
